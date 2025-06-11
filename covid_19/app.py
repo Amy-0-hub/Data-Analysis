@@ -22,7 +22,7 @@ def load_data():
 # Step 1: data clean and data preprocessing
 def drop_columns(df):
     ## drop the unnecessary columns from dataframe
-    columns_to_drop = ['Country_Region', 'Last_Update', 'Hospitalization_Rate', 'Case_Fatality_Ratio', 'UID', 'ISO3']
+    columns_to_drop = ['Country_Region', 'Last_Update', 'FIPS', 'Hospitalization_Rate', 'Case_Fatality_Ratio', 'UID', 'ISO3']
     df = df.drop(columns = columns_to_drop, errors = 'ignore')
     # handle missing values
     df = df.dropna(inplace = False)
